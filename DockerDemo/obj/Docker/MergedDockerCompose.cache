@@ -1,0 +1,11 @@
+services:
+  dockerdemo:
+    build:
+      context: E:\Code\DockerDemo
+      dockerfile: DockerDemo/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: dockerdemo
+    ports:
+    - 80/tcp
+version: '3.0'
